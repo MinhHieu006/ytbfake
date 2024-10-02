@@ -1,0 +1,144 @@
+.header{
+    height:57px;
+    display:flex;
+    flex-direction:row;   
+    justify-content:space-between; 
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+    background-color:white;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color: rgb(228, 228, 228);
+
+}
+.nav-left{
+    display:flex;
+    align-items:center;     
+}
+.hamburger{
+    height:24px;
+    width:24px;
+    padding:0 24px 0 20px;
+    cursor:pointer;
+}
+.logo{
+    height:40px;
+    width:90px;
+    cursor:pointer;
+}
+.nav-mid{
+    flex:1;
+    display:flex;
+    flex-direction:row;
+    margin: 0 35px 0 70px;
+    max-width:500px;
+    align-items:center;
+}
+.search-bar{
+    flex:1;
+    height:36px;
+    font-size:16px;
+    border:1px solid  rgb(192, 192, 192);
+    box-shadow:inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+    cursor:pointer;
+}
+.search-bar::placeholder{
+        font-size:16px;
+    }
+
+.sbutton, .voice{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+}
+.sbutton{
+    height:40px;
+    width:60px;
+    background-color: rgb(245, 245, 245);
+    border:1px solid  rgb(192, 192, 192);
+  }
+.voice{
+    height:40px;
+    width:40px; 
+    border-radius:90px;
+    border:none;
+    background-color: rgb(245, 245, 245);
+}
+.sbox{
+    height:40px;
+    width:40px;
+}
+.mic{
+    height:24px;
+    width:24px;
+}
+.sbutton{
+    padding-right:10px;
+}
+.sbutton .tooltip,.voice .tooltip{
+    position:absolute;
+    bottom:-28px;
+    padding:4px 8px 4px 8px;
+    background-color:gray;
+    color:white;
+    opacity:0;
+    transition:opacity 0.15s;
+    pointer-events:none;
+    white-space: nowrap; 
+}
+.nav-right{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    align-items:center;
+    padding-right:25px;
+}
+.upload-container .tooltip, .apps-container .tooltip, .notify-container .tooltip{
+    position:absolute;
+    bottom:-28px;
+    padding:4px 8px 4px 8px;
+    background-color:gray;
+    color:white;
+    opacity:0;
+    transition:opacity 0.15s;
+    pointer-events:none;
+    white-space: nowrap; 
+}
+.notify-container .notify-count{
+    position:absolute;
+    top:9px;
+    right:75px;
+    background-color:red;
+    width:17px;
+    height:17px;
+    border-radius:60px;
+    color:white;
+    text-align:center;
+}
+.upload, .apps, .notify, .user{
+    height:25px;
+    width:25px;
+    cursor:pointer;
+}
+.nav-right .tooltip{
+    font-size:12px;
+}
+.upload-container:hover .tooltip,
+ .apps-container:hover .tooltip,
+  .notify-container:hover .tooltip,
+.sbutton:hover .tooltip,.voice:hover .tooltip{
+    opacity:1;
+}
+.user{
+    width:60%;
+    height:60%;
+    border-radius:50%;
+}
+
+
